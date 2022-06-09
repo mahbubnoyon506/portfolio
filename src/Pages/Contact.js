@@ -5,7 +5,7 @@ import { MdMyLocation } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <div class="min-h-screen bg-accent py-12 px-5 ">
+        <div class="min-h-screen bg-base-200 py-12 px-5 ">
             <div class="md:grid gap-5 grid-cols-2">
                 <div class="pl-5 ">
                     <h1 class="">Get in Touch</h1>
@@ -59,6 +59,9 @@ const Contact = () => {
                         </div>
                         <div class="form-control mt-2">
                             <button class="btn btn-primary">Submit</button>
+                        </div>
+                        <div>
+                            <a href="https://form.jotform.com/221593578733062"></a>
                         </div>
                     </div>
                 </div>

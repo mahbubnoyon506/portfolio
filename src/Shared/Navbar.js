@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import Profile from '../Components/Profile';
 
 const Navbar = () => {
     return (
@@ -16,6 +17,10 @@ const Navbar = () => {
                 </div>
                 <div class="drawer-side ">
                     <label for="my-drawer" class="drawer-overlay"></label>
+                    <div className='flex justify-center items-center'>
+                        <Profile></Profile>
+                    </div>
+
                     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                         {/* <!-- Sidebar content here --> */}
                         <li><NavLink to='/'>Home</NavLink></li>
