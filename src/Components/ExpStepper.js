@@ -27,6 +27,13 @@ const steps = [
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
   },
+  {
+    label: 'Create an ad',
+    description: `Try out different ad text to see what brings in the most customers,
+              and learn how to enhance your ads using features like ad extensions.
+              If you run into any problems with your ads, find out how to tell if
+              they're running and how to resolve approval issues.`,
+  },
 ];
 
 
@@ -43,7 +50,7 @@ const ExpStepper = () => {
       setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
     return (
-        <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+        <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
         <Paper
           square
           elevation={0}
@@ -57,7 +64,7 @@ const ExpStepper = () => {
         >
           <Typography>{steps[activeStep].label}</Typography>
         </Paper>
-        <Box sx={{ height: 255, maxWidth: 400, width: '100%', p: 2 }}>
+        <Box sx={{ height: 255, maxWidth: '100%', width: '100%', p: 2 }}>
           {steps[activeStep].description}
         </Box>
         <MobileStepper

@@ -1,26 +1,37 @@
 import React from 'react';
+import blogbg from '../assets/images/bg/5.jpg'
+import stepbg from '../assets/images/bg/11.jpg'
 
 const Blogs = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+        <div class="pt-10 pb-20" style={{ backgroundImage: `url(${blogbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <h1 class="pb-10 text-5xl font-bold pl-20">Recent Blogs</h1>
+            <div className='hero'>
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card w-96 bg-base-100 shadow-xl shadow-blue-500/50 image-full">
+                        <figure><img src={stepbg} alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">
-                                Shoes!
-                                <div class="badge badge-secondary">NEW</div>
-                            </h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <div class="badge badge-outline">Fashion</div>
-                                <div class="badge badge-outline">Products</div>
-                            </div>
+                            <h2 class="card-title">Posts</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis.</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl shadow-blue-500/50 image-full">
+                        <figure><img src={stepbg} alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Posts</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis.</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl shadow-blue-500/50 image-full">
+                        <figure><img src={stepbg} alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Posts</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

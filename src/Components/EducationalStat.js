@@ -18,11 +18,16 @@ const steps = [
   {
     label: 'Create an ad group',
     description:
-      'An ad group contains one or more ads which target a shared set of keywords.',
+      `An ad group contains one or more ads which target a shared set of keywords.
+      An ad group contains one or more ads which target a shared set of keywords.`,
   },
   {
     label: 'Create an ad',
     description: `Try out different ad text to see what brings in the most customers,
+              and learn how to enhance your ads using features like ad extensions.
+              If you run into any problems with your ads, find out how to tell if
+              they're running and how to resolve approval issues.`,
+    description1: `Try out different ad text to see what brings in the most customers,
               and learn how to enhance your ads using features like ad extensions.
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
@@ -45,7 +50,7 @@ const EducationalStat = () => {
       setActiveStep(0);
     };
     return (
-        <Box sx={{ maxWidth: 400 }}>
+        <Box sx={{ maxWidth: '100%' }}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
@@ -60,6 +65,7 @@ const EducationalStat = () => {
               </StepLabel>
               <StepContent>
                 <Typography>{step.description}</Typography>
+                <Typography>{step.description1}</Typography>
                 <Box sx={{ mb: 2 }}>
                   <div>
                     <Button

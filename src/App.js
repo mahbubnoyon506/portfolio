@@ -10,8 +10,13 @@ import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Blogs from './Pages/Blogs';
 import Contact from './Pages/Contact';
+import ProjectDetail from './Components/Projects.js/ProjectDetail';
+import Footer from './Shared/Footer';
+
+
 
 function App() {
+
   return (
     <div>
         <Routes>
@@ -26,7 +31,9 @@ function App() {
             <Route path='blogs' element={<Blogs></Blogs>}></Route>
             <Route path='contact' element={<Contact></Contact>}></Route>
           </Route>
+          <Route path='/projectdetail' element={<ProjectDetail></ProjectDetail>}></Route>
         </Routes>
+        {/* <Footer></Footer> */}
     </div>
   );
 }
