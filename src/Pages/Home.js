@@ -8,6 +8,7 @@ const Home = () => {
         <div>
             {/* <Navbar></Navbar> */}
            <HomeComponent></HomeComponent>
+           <About></About>
         </div>
     );
 };
