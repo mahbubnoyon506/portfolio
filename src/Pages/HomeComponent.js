@@ -30,11 +30,11 @@ const HomeComponent = () => {
 
     return (
         <div class="min-h-screen" style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-            {/* <div class="hero-overlay bg-opacity-80"></div> */}
+            <div class="hero-overlay bg-opacity-80 "></div>
             <div class="text-neutral-content ">
                 <div class="max-w-md ml-20 pt-20 " >
                         <h1 class=" text-xl "><small className='text-xl'>Hi, I'M</small></h1>
-                        <h1 class="mb-5 text-5xl font-bold">Mahbub Noyon</h1>
+                        <h1 class="mb-5 text-5xl font-bold " style={{textShadow: '5px 5px 5px #FFFFFF'}}>Mahbub Noyon</h1>
                     <h3 class="mb-5 text-3xl">I'm a <span ref={el}></span> </h3>
                     <Link className='btn btn-primary btn-outline' to="/resume/Mahbub-Noyon-Resume.pdf" target="_blank" download>Download CV <FaDownload className='ml-2'></FaDownload></Link>
                 </div>

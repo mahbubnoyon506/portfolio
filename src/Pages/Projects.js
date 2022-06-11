@@ -4,11 +4,13 @@ import projectbg from '../assets/images/bg/4.jpg'
 import project1 from '../assets/images/projects/JohnDeere.png'
 import project2 from '../assets/images/projects/Honda-Auto-Parts-Warehouse.png'
 import project3 from '../assets/images/projects/DavidLouise.png'
+import AllProjects from '../Components/AllProjects.js/Projects'
 
 const Projects = () => {
     return (
         <div class="px-20 pb-10 pt-20" style={{ backgroundImage: `url(${projectbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
             <h1 class="pb-16 text-5xl font-bold">Recent Projects</h1>
+            <AllProjects></AllProjects>
             {/* <div class="">
                 <div class="grid gap-5 md:grid-cols-3 ">
                     <div class="card w-96 shadow-blue-500/50 shadow-xl image-full">
@@ -43,7 +45,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div> */}
-            <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
+            {/* <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
                 <div class="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src={project1} class="max-w-sm rounded-lg shadow-2xl" alt='' /></figure>
                     <div class="card-body">
@@ -110,7 +112,7 @@ const Projects = () => {
                     <figure><img src={project3} class="max-w-sm rounded-lg shadow-2xl" alt='' /></figure>
                     <div class="card-body">
                         <div className=''>
-                            <h1 class="text-2xl font-bold">Warehouse Management</h1>
+                            <h1 class="text-2xl font-bold">Fitness Trainer</h1>
                             <div>
                                 <ul>
                                     <li>OverView: This site is about warehouse management.</li>
@@ -137,7 +139,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

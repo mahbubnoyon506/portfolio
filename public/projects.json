@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Manufacturer Company",
+        "image": "https://i.ibb.co/SXkt6W5/John-Deere.png",
+        "image2": "https://i.ibb.co/P14Tf3p/John-Deere-products.png",
+        "image3": "https://i.ibb.co/dQXnwLs/John-Deere-manage-order.png",
+        "overview" : "This site is manufacturer-based. On this site, users can create an account, order products, and pay online. They can check the shipping status and modify orders. Sellers can add,update or remove products. They can manage orders. None can order without having an account.",
+        "featured" : [
+            "Firebase authentication",
+            "Dashboard for user and admin",
+            "Stripe payment system",
+            "User verification with JWT",
+            "Private route"
+        ],
+        "technology": [
+            "React",
+            "Stripe",
+            "Firebase",
+            "ReactRouterDom,",
+            "Axios",
+            "ReactHookForm",
+            "ReactQuery",
+            "Express",
+            "MongoDB",
+            "Tailwind",
+            "JWT"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Warehouse Management Software",
+        "image": "https://i.ibb.co/10Ny4R6/Honda-Auto-Parts-Warehouse.png",
+        "image2": "https://i.ibb.co/S5fZd7F/honda-home.png",
+        "image3": "https://i.ibb.co/VmYnT83/honda-manage-items.png",
+        "overview" : "This site is about warehouse management. On this site, users can create an account, order products and manage their orders. The seller can add, update or remove products. None can order without having an account.",
+        "featured" : [
+            "Firebase authentication",
+            "Dashboard for user and admin",
+            "User verification with JWT",
+            "Private route"
+        ],
+        "technology": [
+            "React",
+            "Stripe",
+            "Firebase",
+            "ReactRouterDom,",
+            "Axios",
+            "ReactHookForm",
+            "ReactQuery",
+            "Express",
+            "MongoDB",
+            "Tailwind",
+            "JWT"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Fitness Trainer",
+        "image": "https://i.ibb.co/NVDk4Yp/David-Louise.png",
+        "image2": "https://i.ibb.co/2KwSsfQ/David-Louise-service.png",
+        "overview" : "This site is about a fitness trainer. David Louise is a world-class athlete and fitness trainer. On this site, users can create an account, and take a service or suggestion about fitness. None can take service without having an account.",
+        "featured" : [
+            "Single page Application",
+            "Login/Register system",
+            "User verification"
+        ],
+        "technology": [
+            "HTML/CSS",
+            "React",
+            "Firebase",
+            "ReactRouter,",
+            "Axios",
+            "ReactHookForm",
+            "ReactQuery",
+            "BootStrap"
+        ]
+    }
+]
+
+
+
