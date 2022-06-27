@@ -34,8 +34,8 @@ const ProjectDetail = () => {
             {/* <div className='absolute mr-[-300px] z-10'>
                 <Navbar></Navbar>
             </div> */}
-            <div class="min-h-screen flex items-center px-20" style={{ backgroundImage: `url(${projectDetail})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-                <div class=" md:grid gap-10 grid-cols-2">
+            <div className="min-h-screen flex items-center px-20" style={{ backgroundImage: `url(${projectDetail})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+                <div className=" md:grid gap-10 grid-cols-2">
                     <div>
                         <Link className='btn btn-outline btn-sm btn-primary my-3' to='/'>Back To Home</Link>
                         <Carousel className=''>
@@ -51,7 +51,7 @@ const ProjectDetail = () => {
                         </Carousel>
                     </div>
                     <div>
-                        <h1 class="text-3xl font-bold">{name}</h1>
+                        <h1 className="text-3xl font-bold">{name}</h1>
                         <p className='text-xl text-semibold py-3'>Overview: <span className='text-base'>{overview}</span></p>
                         <div className='flex'>
                             <h2 className='text-xl text-semibold'>Featured: </h2>

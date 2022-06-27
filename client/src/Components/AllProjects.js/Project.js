@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const Project = ({ project }) => {
     const { name, image, featured, _id} = project;
     return (
-        <div class="card w-96 bg-base-100 shadow-xl shadow-blue-500/50 image-full">
+        <div className="card w-96 bg-base-100 shadow-xl shadow-blue-500/50 image-full">
             <figure><img src={projectbg} alt="Shoes" /></figure>
-            <div class="card-body">
+            <div className="card-body">
                 <img src={image} alt="" />
-                <h2 class="card-title">{name}</h2>
+                <h2 className="card-title">{name}</h2>
                 <ul>
                     <li>&#9885; {featured[0]}</li>
                     <li>&#9885; {featured[1]}</li>

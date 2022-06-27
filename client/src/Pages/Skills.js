@@ -1,6 +1,6 @@
 
-import React, { useEffect } from 'react';
-import skillbg from '../assets/images/bg/2.jpg'
+import React from 'react';
+import projectbg from '../assets/images/bg/4.jpg'
 import stepbg from '../assets/images/bg/11.jpg'
 import html from '../assets/images/skill/1.png'
 import css from '../assets/images/skill/13.svg'
@@ -72,22 +72,22 @@ const Skills = () => {
     ]
 
     return (
-        <div class="py-20 px-20" style={{ backgroundImage: `url(${skillbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+        <div className="py-20 px-20" style={{ backgroundImage: `url(${projectbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
             <div className="md:grid gap-5 grid-cols-2">
                 <div className='my-auto md:pr-5'>
-                    <h1 class="text-5xl font-bold">About</h1>
-                    <p class="py-6">I'm a professional Web Designer and Developer and an expert in Front End Development with React JS. I am capable to make a mobile-friendly and faster responsive website. You can also get unique ideas about UX/UI Design from me. I have completed 30+ projects for various local clients. Also, I have expertise in creating an eCommerce website. I love my profession and building websites with my best efforts. I am also passionate to make Web Applications using React JS and Node JS</p>
+                    <h1 className="text-5xl font-bold">About</h1>
+                    <p className="py-6">I'm a professional Web Designer and Developer and an expert in Front End Development with React JS. I am capable to make a mobile-friendly and faster responsive website. You can also get unique ideas about UX/UI Design from me. I have completed 30+ projects for various local clients. Also, I have expertise in creating an eCommerce website. I love my profession and building websites with my best efforts. I am also passionate to make Web Applications using React JS and Node JS</p>
                 </div>
                 <div>
-                    <h1 class="pb-5 text-xl font-bold">My Core Strength</h1>
+                    <h1 className="pb-5 text-xl font-bold">My Core Strength</h1>
                     <div className='grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
 
                         {
                             icons.map((i, index) =>
-                                <div key={index} class="card bg-base-100 shadow-xl shadow-blue-500/50 image-full" >
+                                <div key={index} className="card bg-base-100 shadow-xl shadow-blue-500/50 image-full" >
                                     <figure><img src={stepbg} alt="" /></figure>
-                                    <div class="card-body" >
-                                        <div class="tooltip tooltip-primary" data-tip={i.name}>
+                                    <div className="card-body" >
+                                        <div className="tooltip tooltip-primary" data-tip={i.name}>
                                             <img src={i.icon} alt="" />
                                         </div>
                                     </div>

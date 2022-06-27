@@ -5,12 +5,12 @@ import contactbg from '../assets/images/bg/1.jpg'
 
 const Contact = () => {
     return (
-        <div class="py-20 px-20" style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="py-20 px-20" style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="">
-                <div class="md:grid grid-cols-2">
-                    <div class="">
-                        <h1 class="">Get in Touch</h1>
-                        <h1 class="text-5xl font-bold">Contact</h1>
+                <div className="md:grid grid-cols-2">
+                    <div className="">
+                        <h1 className="">Get in Touch</h1>
+                        <h1 className="text-5xl font-bold">Contact</h1>
                         <p className='text-xl pt-10'>Do you have any query or discussion? Contact with Us.</p>
                         <div>
                             <div className='flex items-center my-5'>
@@ -33,34 +33,34 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card flex-shrink-0 w-full shadow-2xl bg-glass">
-                        <div class="card-body">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Name</span>
+                    <div className="card flex-shrink-0 w-full shadow-2xl bg-glass">
+                        <div className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" placeholder="Name" class="input input-bordered" />
+                                <input type="text" placeholder="Name" className="input input-bordered" />
                             </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Email</span>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="Email" class="input input-bordered" />
+                                <input type="text" placeholder="Email" className="input input-bordered" />
                             </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Subject</span>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Subject</span>
                                 </label>
-                                <input type="text" placeholder="Subject" class="input input-bordered" />
+                                <input type="text" placeholder="Subject" className="input input-bordered" />
                             </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Your Text</span>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Your Text</span>
                                 </label>
-                                <textarea type="text" placeholder="textarea" class="input input-bordered" />
+                                <textarea type="text" placeholder="textarea" className="input input-bordered" />
                             </div>
-                            <div class="form-control mt-2">
-                                <button class="btn btn-primary">Submit</button>
+                            <div className="form-control mt-2">
+                                <button className="btn btn-primary">Submit</button>
                             </div>
                             <div>
                                 <a href="https://form.jotform.com/221593578733062"></a>

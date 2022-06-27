@@ -10,7 +10,6 @@ import Experience from './Pages/Experience';
 import Blogs from './Pages/Blogs';
 import Contact from './Pages/Contact';
 import ProjectDetail from './Components/AllProjects.js/ProjectDetail';
-import Footer from './Shared/Footer';
 import MouseParticles from 'react-mouse-particles'
 
 
@@ -34,7 +33,6 @@ function App() {
           <Route path='/projectdetail/:id' element={<ProjectDetail></ProjectDetail>}></Route>
         </Routes>       
         <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
-        {/* <Footer></Footer> */}
     </div>
   );
 }

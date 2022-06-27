@@ -1,6 +1,5 @@
 import React from 'react';
 import educationbg from '../assets/images/bg/4.jpg'
-import stepbg from '../assets/images/bg/11.jpg'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -16,13 +15,13 @@ const Education = () => {
     };
 
     return (
-        <div class="pt-10 pb-20" style={{ backgroundImage: `url(${educationbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-            <h1 class="pb-5 text-5xl font-bold pl-20">Education</h1>
+        <div className="pt-10 pb-20" style={{ backgroundImage: `url(${educationbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+            <h1 className="pb-5 text-5xl font-bold pl-20">Education</h1>
             <div className='hero px-20'>
-                <div class="">
-                    <div class="card  shadow-xl shadow-blue-500/50 ">
+                <div className="">
+                    <div className="card  shadow-xl shadow-blue-500/50 ">
                         {/* <figure><img src={stepbg} alt="Shoes" /></figure> */}
-                        <div class="card-body">
+                        <div className="card-body">
                             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}

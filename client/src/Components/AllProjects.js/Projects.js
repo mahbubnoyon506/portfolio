@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Loading from '../Loading';
 import Project from './Project'
@@ -7,12 +8,11 @@ const Projects = () => {
     const [isloading, setIsloading] = useState(true)
 
     useEffect( () => {
-        fetch('https://obscure-mesa-79291.herokuapp.com/projects')
-        .then(res => res.json())
-        .then(data => {
+        (async () => {
+           const {data} = await axios.get(`https://obscure-mesa-79291.herokuapp.com/projects`)
             setProjects(data)
             setIsloading(false)
-        })
+        })()
     }, [])
     if(isloading){
         return <Loading></Loading>
